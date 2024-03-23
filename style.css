@@ -11,7 +11,10 @@
 }
 
 body {
-  background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+  
   display: grid;
   place-items: center;
   
@@ -154,3 +157,14 @@ background: #FF9500;
   }
 }
 
+@keyframes gradient {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
